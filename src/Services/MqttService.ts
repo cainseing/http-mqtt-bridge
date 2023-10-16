@@ -6,15 +6,16 @@ export default class MqttService {
         const client = mqtt.connect({ host: App.config.MQTT_URL, port: App.config.MQTT_PORT });
     
         client.on('connect', (): void => {
-            client.subscribe(topic, (error: any) => {
+            client.subscribe('connect', (error: any) => {
                 if (error) {
                     App.log.error(error);
                     return;
                 }
     
-                App.log.info(`Published to ${topic}`);
-    
                 client.publish(topic, message);
+                client.end();
+
+                App.log.info(`Published to ${topic}`);
             });
         });
     }
