@@ -1,0 +1,6 @@
+.env
+.vscode
+build.sh
+dist/*
+node_modules
+publish.sh

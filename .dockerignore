@@ -1,0 +1,9 @@
+.env
+.env.example
+.nvmrc
+.vscode
+Dockerfile
+node_modules
+npm-debug.log
+build.sh
+publish.sh

@@ -1,0 +1,29 @@
+{
+  "name": "httpmqttbridge",
+  "version": "1.0.5",
+  "description": "Simple HTTP to MQTT bridge server",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "ENVIRONMENT=development node server.js",
+    "local": "ENVIRONMENT=local tsc-watch --project . --outDir ./dist --onSuccess \"nodemon ./dist/server.js\"",
+    "prod": "ENVIRONMENT=production node server.js",
+    "staging": "ENVIRONMENT=staging node server.js"
+  },
+  "author": "Cain Seing",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.3.0",
+    "@fastify/env": "^4.2.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.21.0",
+    "mqtt": "^5.0.2",
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.1.6"
+  }
+}
