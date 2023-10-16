@@ -22,7 +22,7 @@ The HTTP to MQTT Bridge Server is a lightweight and efficient server that facili
 # git clone git@github.com:cainseing/http_mqtt_bridge.git
 ```
 ```
-# npm run dev
+# npm run local
 ```
 Note: You will need to make a .env file to configure your MQTT broker details.
 
@@ -34,6 +34,13 @@ Note: You will need to make a .env file to configure your MQTT broker details.
 ```
 # docker run -e HTTP_PORT=8080 -e MQTT_URL=test.mosquitto.org -e MQTT_PORT=1883 cainseing/http_mqtt_bridge:latest
 ```
+
+#### ENV's
+
+- `API_KEY`
+- `HTTP_PORT`
+- `MQTT_PORT`
+- `MQTT_URL`
 
 ## API Endpoints
 The server exposes specific API endpoints for receiving HTTP requests. By default, the server listens on port 80, but you can change this in the configuration file. The following are the basic examples for webhook requests.
