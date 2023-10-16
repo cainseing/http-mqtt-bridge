@@ -32,14 +32,14 @@ Note: You will need to make a .env file to configure your MQTT broker details.
 
 #### DOCKER:
 ```
-# docker run -e HTTP_PORT=8080 -e MQTT_URL=test.mosquitto.org -e MQTT_PORT=1883 cainseing/http_mqtt_bridge:latest
+# docker run -e HTTP_PORT=8080 -e MQTT_URL=test.mosquitto.org -e MQTT_PORT=1883 cainseing/http-mqtt-bridge:latest
 ```
 
 #### ENV's
 
 - `API_KEY`
-- `HTTP_PORT`
-- `MQTT_PORT`
+- `HTTP_PORT` (defaults to port 80)
+- `MQTT_PORT` (defaults to port 1883)
 - `MQTT_URL`
 
 ## API Endpoints
