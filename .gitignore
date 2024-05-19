@@ -4,3 +4,4 @@ build.sh
 dist/*
 node_modules
 publish.sh
+.idea/*
