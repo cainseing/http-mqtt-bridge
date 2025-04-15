@@ -52,7 +52,7 @@ The server exposes specific API endpoints for receiving HTTP requests. By defaul
 ```
 {
     "topic": "example",
-    "paylod": {
+    "payload": {
         "type": "alarm",
         "message": "Power failure"
     }
