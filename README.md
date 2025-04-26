@@ -12,7 +12,7 @@ The HTTP to MQTT Bridge Server is a lightweight and efficient server that facili
 
 ### Prerequisites
 
-- Node.js (version 18 or later) and NPM installed on the system.
+- Node.js (version 22 or later) and NPM installed on the system.
 - Access to an MQTT broker (e.g., Mosquitto, RabbitMQ) where the server can publish and subscribe to topics.
 
 ### Usage
