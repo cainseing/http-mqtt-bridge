@@ -17,7 +17,7 @@ export default class BasicAuthMiddleware {
 
         const password: string = Buffer.from(basic, 'base64').toString('utf-8').split(':')[1];
 
-        if (password !== request.routeConfig.sharedKey) {
+        if (password !== request.routeOptions.config.sharedKey) {
             return ReplyHelpers.error(reply, 401, 'Unauthorized');
         }
 
