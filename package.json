@@ -1,6 +1,6 @@
 {
   "name": "httpmqttbridge",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Simple HTTP to MQTT bridge server",
   "main": "server.js",
   "type": "module",
