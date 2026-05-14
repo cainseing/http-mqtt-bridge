@@ -1,7 +1,6 @@
 .env
 .vscode
 build.sh
-dist/*
+dist/
 node_modules
 publish.sh
-.idea/*

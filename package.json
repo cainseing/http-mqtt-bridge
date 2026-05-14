@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
     "local": "ENVIRONMENT=local tsc-watch --project . --outDir ./dist --onSuccess \"nodemon ./dist/server.js\"",
     "prod": "ENVIRONMENT=production node server.js"
   },
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@types/node": "^24.10.1",
     "tsc-watch": "^7.2.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.6"
   }
 }
